@@ -1,0 +1,144 @@
+﻿<!DOCTYPE html>
+<html lang="en" >
+<head>
+  <meta charset="UTF-8">
+  <link rel="stylesheet" href="./style.css">
+  <link rel="stylesheet" href="../css/hover.css">
+  <link rel="stylesheet" href="../css/main.css">
+</head>
+<body>
+
+
+<div id="van" class="minifancy heartbeat" style=" display: none;z-index: 1">
+  <div id="subisla heartbeat" class="recuadro_verde" style=" height: 60%;">
+    <div class="cerrarminifancy hvr-pulse" onclick="cerrarinfo();"></div>
+    <div  class="centro" style="width: 95%;" >
+      <h2 class="bold" style="padding-top: 1%">Van</h2>
+      <p style="text-align: left;font-size: 1.2vw;">El objetivo de la VAN ECORESPONSABLE es visitar clientes de estaciones de servicio (EDS) e industrias en diferentes zonas del país, logrando brindar apoyo en temas como: </p>
+      <br><br>
+      <p style="text-align: left;font-size: 1.2vw;">
+        ● Gestión ambiental.<br>
+        ● Gestión operacional.<br>
+        ● Seguridad y salud en el trabajo.<br>
+        ● Calidad y medida de los combustibles.<br>
+        ● Capacitación a los clientes de las estaciones  e industrias, sus administradores y vendedores de servicio.
+      </p>
+    </div>
+    <div class="abajo skinLupa"><img src="../img/lema.jpg" width="100%"></div>
+  </div>
+</div>
+
+<div id="lema" class="minifancy heartbeat" style="position: fixed;display: none;z-index: 1">
+  <div id="subisla heartbeat" class="recuadro_verde" style="height: 60%;">
+    <div class="cerrarminifancy hvr-pulse" onclick="cerrarinfo();"></div>
+    <div  class="centro" style="width: 70%;"> 
+      <h2 class="bold">Objetivo</h2>
+      Buscamos la excelencia operacional y la optimización de recursos energéticos, y naturales en nuestras estaciones de servicio y clientes de industria, a través de la capacitación constante en el uso de programas y productos de nuestras marcas. <br>
+    </div>   
+  </div>
+</div>
+
+<div id="programa" class="minifancy heartbeat" style="position: fixed;display: none;z-index: 1">
+  <div id="subsurtidor" class="recuadro_verde" style="height: 60%;">
+    <div class="cerrarminifancy hvr-pulse" onclick="cerrarinfo();"></div>
+    <div  class="centro" style="width: 90%;">
+      <h2 class="bold">Programa de incentivos</h2>
+      <p style="text-align: left;">• La alianza al programa es por un año.<br> 
+      • Únicamente se premiarán las EDS que pertenezcan al programa.<br>
+      • Cada semestre se premia a las mejores EDS pertenecientes al programa. <br>
+      • Se entregará un Premio Final a la EDS con mejor desempeño en el año.</p>
+    </div>
+    <!-- <div class="abajo skinLupa"><img src="../img/punto4/podio.png" style=""></div>            -->
+  </div>
+</div>
+
+<div id="capacitaciones" class="minifancy heartbeat" style="position: fixed;display: none;z-index: 1">
+  <div id="subsurtidor" class="skinMedia" style="height: 75%; position: absolute; top: 0; bottom: 0; margin: auto;">
+    <div class="cerrarminifancy hvr-pulse fadeIn animated delay-5s" onclick="enviarAlPadre(60);"></div>
+    <div class="centro" style="height: 60vh; width: 50vw;"> 
+      <h2 class="bold">Capacitaciones</h2>
+      En campo, centros de eventos y con consultores externos.
+      <div class="slider_b">
+        <ul>
+          <li>
+            <img class="bounce-in-right" src="../img/punto4/capacitaciones1.jpg">
+          </li>
+          <li>
+            <img class="bounce-in-right" src="../img/punto4/capacitaciones2.jpg">
+          </li>
+          <li>
+            <img class="bounce-in-right" src="../img/punto4/capacitaciones3.jpg">
+          </li>
+          <li>
+            <img class="bounce-in-right" src="../img/punto4/capacitaciones4.JPG">
+          </li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+
+<div id="container">
+
+  <a href="" id="reiniciar" style="display: none;">
+    <img src="../img/start.png" class="hvr-pulse" style="position: fixed;right: 1%;top: 1%;width: 12%;height: auto;">
+  </a>
+   
+</div>
+<!-- partial -->
+<script src='../js/tree.js'></script>
+<script src='../js/panolens.js'></script>
+<script  src="./script.js"></script>
+
+</body>
+</html>
+
+
+<script type="text/javascript">
+
+  function enviarAlPadre(diapo){
+    cerrarinfo();
+    parent.cont = diapo;
+    parent.cargaHtml();      
+  }
+
+  function van(){
+    document.getElementById("van").style.display = "flex";
+    document.getElementById("subisla").style.animationName = "heartbeat";
+   }
+  function lema(){
+    document.getElementById("lema").style.display = "flex";
+    document.getElementById("subisla").style.animationName = "heartbeat";
+   }
+  function programa(){
+    document.getElementById("programa").style.display = "flex";
+    document.getElementById("subsurtidor").style.animationName = "heartbeat";
+  }
+  function capacitaciones(){
+    document.getElementById("capacitaciones").style.display = "flex";
+    document.getElementById("subsurtidor").style.animationName = "heartbeat";
+  }
+  function cerrarinfo(){
+    document.getElementById("van").style.display = "none";
+    document.getElementById("lema").style.display = "none";
+    document.getElementById("programa").style.display = "none";
+    document.getElementById("capacitaciones").style.display = "none";
+  }
+
+  function cerrarx(){
+     document.getElementById("lema").style.display = "none";
+    document.getElementById("programa").style.display = "none";
+    document.getElementById("capacitaciones").style.display = "none";
+  }
+
+</script>
+
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<style>
+* {
+  box-sizing:border-box;
+}
+</style>

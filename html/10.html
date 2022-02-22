@@ -1,0 +1,402 @@
+<!-- <div class="contenedorInstruccion" onClick="cierraInstruccion('.contenedorInstruccion')">
+   <div class="instruccion_paneo">
+       <div class="modulo_instruccion">
+            <div class="manoPaneo">
+               &nbsp;
+           </div>
+           <div class="flechasPaneo paneando">
+               &nbsp;
+           </div>
+       </div>
+   </div>
+   <h3 class="instruccionPaneoTxt">Mueve para explorar</h3>
+</div>
+
+<iframe id="test" src="./panorama1.2/index.html" style="height: 100%; width: 100%;position: fixed;z-index: 9"></iframe>
+
+<!DOCTYPE html>
+<html>
+<head><meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="UTF-8">
+
+</head>
+<body>
+<div class="contenedorInstruccionScroll" style="display: none" id="scrollControl">
+    <div class="navega_scroll" id="bulletsNav">
+        &nbsp;<img id="puntero1a" src="img/flecha_adelante.png" class="blink-1" style="position: absolute;top: 14%;left: -54%;height: 13%;transform: rotate(395deg);" onmouseover="ocultarpuntero();" onclick="ocultarpuntero();">
+        <img id="puntero1b" src="img/flecha_adelante.png" class="blink-1" style="position: absolute;top: 22%;left: -54%;height: 13%;transform: rotate(395deg);display: none;" onmouseover="ocultarpuntero();" onclick="ocultarpuntero();">
+        <nav class="menu" >
+          <a href="#" data-ref="11  " >
+        <img id="punterofinal" src="img/flecha_adelante.png" class="blink-1" style=" position: absolute;bottom: 10%;left: -54%;height: 13%;transform: rotate(395deg);display: none;"></a></nav>       
+    </div>
+</div>
+    
+<section data-section="0" class="active">
+  <div class="minifancy" id="inst1" style="display: none;">
+      <div class="centro_i">
+        <p>Para descubrir el contenido de este curso tienes muchas opciones.</p>
+      </div>
+      <div class="modulo_instruccion">
+        <img src="img/inst_scroll.png" style="width: 35vh;">
+        <img src="img/inst_scroll2.png" class="ascensor" style="top: 15vh; width: 15vh;">
+        <p>Girar la rueda del mouse</p>
+      </div>
+      <div class="modulo_instruccion">
+        <div class="instrKey">
+          &nbsp;
+        </div>
+        <p>Usar las flechas del teclado</p>
+      </div>
+      <div class="modulo_instruccion">
+        <div style="flex-direction: row; display: flex;">
+          <div class="bulletScroll" style="width: 10vw; height: 10vw; border-radius: 10vw">
+            &nbsp;
+          </div>  
+          <div class="flechaIndica">
+            &nbsp;
+          </div>
+        </div>
+        <p>O dar clic con el mouse sobre cada tema</p>
+      </div>
+  </div>
+</section>
+
+
+<section data-section="1">
+  <div id="video1" class="minifancy heartbeat videos_b" style="display: flex;">
+  <div id="subisla heartbeat" class="skinActividad">
+    <video src="video/predescargue parte A.mp4" controls onplay="ocultarpuntero();" onended="puntero1b();" ></video>
+  </div>
+</div>
+  <!-- <div class="minifancy">
+      <iframe id="player_YT0" class="video" width="100%" height="95%" src="https://www.youtube.com/embed/75Hwx2afT9I" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen onended="activaActividad()"></iframe>
+  </div> -->
+</section>
+
+<section data-section="2">
+  <div id="positiva" class="minifancy heartbeat">
+    <div id="subisla heartbeat" class="descargue_b" style="">
+      <div class="left heartbeat">
+        <h2 class="bold">Seguridad y salud en el trabajo (SST)</h2><br>
+        Las estaciones de servicio deberán contar con las medidas de seguridad y salud en el trabajo necesarias para el desarrollo de sus diferentes actividades, con el fin de minimizar, prevenir accidentes y enfermedades laborales. 
+        <br><br><br>
+        Para la realización del descargue se debe garantizar que la persona asignada de realizar el descargue, cuente con todos los elementos de protección personal en perfecto estado. 
+        <br><br><br>
+        También debe garantizarse que la persona es idónea en el procedimiento que va a realizar y cuenta con certificación de curso de alturas nivel avanzado expedido o renovado en un periodo inferior a un año.
+      </div>
+      <div class="right heartbeat" style="background-image: url(img/uniforme.gif); background-size: cover; background-repeat: no-repeat; background-position: center;">
+          &nbsp;
+      </div>                   
+    </div>
+  </div>
+</section>
+
+<section data-section="3">
+  <div id="positiva" class="minifancy heartbeat">
+    <div id="subisla heartbeat" class="descargue_b" style="">
+      <div class="left heartbeat">
+        <h2 class="bold">Casco con barboquejo</h2><br>
+        Para prevenir golpes en la cabeza. El barbuquejo permitirá que el casco permanezca sujeto a la cabeza y no se caiga cuando la persona se incline. <br>
+      </div>
+      <div class="right heartbeat">
+        <div class="skinLupa" style="background-image: url(img/casco.gif); background-size: cover; background-repeat: no-repeat; background-position-x: 35%;">
+          &nbsp;
+        </div>
+      </div>                   
+    </div>
+  </div>  
+</section>
+
+<section data-section="4">
+  <div id="positiva" class="minifancy heartbeat">
+    <div id="subisla heartbeat" class="descargue_b" style="">
+      
+      <div  class="left heartbeat">
+        <h2 class="bold">Gafas</h2><br>
+        Evita que salpicaduras de combustible lleguen a los ojos y los afecten.   <br>
+      </div>
+      <div class="right heartbeat">
+        <div class="skinLupa" style="background-image: url(img/gafas.gif); background-size: cover; background-repeat: no-repeat; background-position-x: 30%;">
+          &nbsp;
+        </div>
+      </div>                   
+    </div>
+  </div>  
+</section>
+
+<section data-section="5">
+  <div id="positiva" class="minifancy heartbeat">
+    <div id="subisla heartbeat" class="descargue_b" style="">
+      
+      <div  class="left heartbeat">
+        <h2 class="bold">Máscara</h2><br>
+        Debe ser tipo cartucho para prevenir la inhalación de vapores de combustible. Si el trabajador inhala los vapores puede sentir mareo, situación especialmente peligrosa si se encuentra en alturas (por ejemplo, sobre el carrotanque). <br>
+      </div>
+      <div  class="right heartbeat">
+        <div class="skinLupa" style="background-image: url(img/mascara.gif); background-size: cover; background-repeat: no-repeat; background-position-x: 30%;">
+          &nbsp;
+        </div>
+      </div>                   
+    </div>
+  </div>  
+</section>
+
+<section data-section="6">
+  <div id="positiva" class="minifancy heartbeat">
+    <div id="subisla heartbeat" class="descargue_b" style="">
+      
+      <div  class="left heartbeat">
+        <h2 class="bold">Arnés</h2><br>
+        <strong>Para prevenir el riesgo de caída de alturas.</strong><br>
+        * Arnés certificado (ANSI) e inspeccionado anualmente.<br>
+        * Contar con eslinga de restricción de movimiento, graduable, de máximo 1.20 m de longitud para el ascenso al carrotanque durante el recibo de producto.<br> 
+        * Eslinga en "Y" para trabajos en alturas, con cola de amarre doble de 1.8 m elastizada con amortiguador y mosquetones de 55 mm.<br>
+        * Carrotanque: El carro tanque debe contar con 2 líneas de vida horizontales para conectar el arnés.
+      </div>
+      <div class="right heartbeat">
+        <div class="skinLupa" style="background-image: url(img/arnes.gif); background-size: 180%; background-repeat: no-repeat">
+          &nbsp;
+        </div>
+      </div>                   
+    </div>
+  </div>  
+</section>
+
+<section data-section="7">
+  <div id="positiva" class="minifancy heartbeat">
+    <div id="subisla heartbeat" class="descargue_b" style=" ">
+      
+      <div  class="left heartbeat">
+        <h2 class="bold">Uniforme Biomax</h2><br>
+        Este protegerá su piel de tener contacto con los combustibles. <br>
+      </div>
+      <div class="right heartbeat">
+        <div class="skinLupa" style="background-image: url(img/uniforme.gif); background-size: 180%; background-repeat: no-repeat">
+          &nbsp;
+        </div>
+      </div>                   
+    </div>
+  </div>  
+</section>
+
+<section data-section="8">
+  <div id="positiva" class="minifancy heartbeat">
+    <div id="subisla heartbeat" class="descargue_b" style="">
+      
+      <div  class="left heartbeat">
+        <h2 class="bold">Guantes</h2><br>
+        Debe utilizarse guantes de vaqueta o nitrilo para prevenir riesgos mecánicos por machucones o cortaduras al manipular la manguera y el acople de accesorios. <br>
+      </div>
+      <div class="right heartbeat">
+        <div class="skinLupa" style="background-image: url(img/guantes.gif); background-size: cover; background-size: cover; background-repeat: no-repeat; background-position-x: -15%;"> 
+          &nbsp;
+        </div>
+      </div>                   
+    </div>
+  </div>  
+</section>
+
+<section data-section="9" onmouseleave="creaBoton();">
+  <div id="video1" class="minifancy heartbeat videos_b" style="display: flex;">
+  <div id="subisla heartbeat" class="skinActividad">
+    <video src="video/predescargue parte B.mp4" controls onended="punterofinal(),creaBoton();"></video>
+  </div> 
+</section>
+
+<section data-section="10" onmouseleave="creaBoton();">
+  <div id="positiva" class="minifancy heartbeat">
+    <div id="subisla heartbeat" class="descargue_b" style="">
+      <div class="left slide-in-blurred-left">
+        <h3 class="bold">Descargas</h3><br>
+        Estos documentos te serán de utilidad para profundizar en este tema. Descárgalos haciendo clic sobre el que quieras explorar.
+        <br><br> 
+        <a href="pdf/combustible/Control_descargue_combustible.xlsx" target="_blank" >● Formato para controlar el combustible que recibes</a>
+        <a href="pdf/combustible/Control_diario_inventario_combustible.xlsx" target="_blank">● Formato para controlar cuánto combustible tienes</a>
+        <a href="pdf/combustible/Controles_operacionales_EDS.xlsx" target="_blank" onclick="punterofinal();">● Formato para controlar que tu EDS sea excelente</a><br><br>
+      </div>
+      <div class="right slide-in-blurred-right delay-0_5s">
+        <div style="width: 50vh;">
+          <img src="img/documentos.png" width="100%">
+        </div>
+      </div>                  
+    </div>
+  </div>  
+</section>
+ -->
+
+
+<style type="text/css">
+  section {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    color:white;
+    visibility: hidden;
+    -webkit-transform: translateZ(0);
+    transform: translateZ(0);
+    display: none;
+  }
+  section.active {
+    visibility: visible;
+    display: flex;
+  }
+</style>
+    
+<script type="text/javascript">
+    
+    currentSectionIndex = 0;
+    diapo_final = 0;
+    sections = document.getElementsByTagName('section');
+    videosYT = document.getElementsByClassName('video');
+    
+    /*--------VIDEO YT----------*/
+    var tag = document.createElement('script');
+    tag.src = "https://www.youtube.com/iframe_api";
+    var firstScriptTag = document.getElementsByTagName('script')[0];
+    firstScriptTag.parentNode.insertBefore(tag, firstScriptTag);
+
+      var playerP;
+      function onYouTubeIframeAPIReady() {
+        playerP = new YT.Player('player_YTF', {
+          height: '100%',
+          width: '100%',
+          videoId: 'UQ-iqdgq7Ts',
+          events: {
+            //'onReady': onPlayerReady
+            'onStateChange': onPlayerStateChange
+          }
+        });
+      }
+    
+    function onPlayerStateChange(event) {        
+            if(event.data === 0) {          
+                creaBoton();
+            }
+        }
+        
+    function creaBoton() {
+      if(diapo_final == 0){
+        var botonCreado = sections.length + 1;
+        document.getElementById("bulletsNav").innerHTML += ("<div class='bulletScrollFinal' onclick='ultimaSeccion()'>&nbsp;</div>");
+        diapo_final = 1;
+      }   
+    }
+    
+    /*------- CREA BOTONES -----*/
+    function construyeBullets() {
+        for(var i = 0; i < sections.length; i++){
+            document.getElementById("bulletsNav").innerHTML += ("<div class='bulletScroll' id='bullet"+i+"' onclick='seccionActiva("+i+")'>&nbsp;</div>");
+        }
+    }   
+
+    function updateBoton() {
+        $('.bulletScrollActivo').removeClass("bulletScrollActivo");
+        $('#bullet'+currentSectionIndex).addClass("bulletScrollActivo");
+    }
+        
+    puede_wheel = 1;
+    document.addEventListener('wheel', e => {
+        //alert(window.scroll(y));
+        if (puede_wheel == 1) {
+          if (e.deltaY < 0 && currentSectionIndex -1 >= 0) {
+            // wheel up
+            sections[currentSectionIndex].className = '';
+            currentSectionIndex--;
+            sections[currentSectionIndex].className = 'active';
+              updateBoton();
+              puede_wheel = 0;
+          } else if (e.deltaY > 0 && currentSectionIndex < sections.length) {
+            // wheel down
+            if(currentSectionIndex == sections.length - 1){
+              creaBoton();
+            } else {
+              sections[currentSectionIndex].className = '';
+              currentSectionIndex++;
+              sections[currentSectionIndex].className = 'active';
+              updateBoton();
+              puede_wheel = 0;
+              }
+            }
+          setTimeout(function(){
+            puede_wheel = 1; 
+          }, 1000);
+        }
+    });
+    
+    document.onkeydown = function(e) {
+      switch (e.keyCode) {
+        case 38:
+          if (currentSectionIndex - 1 >= 0) {
+          sections[currentSectionIndex].className = '';
+          currentSectionIndex--;
+          sections[currentSectionIndex].className = 'active';
+            updateBoton();
+          }
+          break;
+        case 40:
+          if (currentSectionIndex + 1 < sections.length) {
+          sections[currentSectionIndex].className = '';
+          currentSectionIndex++;
+          sections[currentSectionIndex].className = 'active';
+            updateBoton();
+            if(currentSectionIndex == sections.length - 1){
+              creaBoton();
+              punterofinal();
+            }
+
+          }
+          break;  
+      }
+    };
+    
+    function seccionActiva(valSecc) {
+        sections[currentSectionIndex].className = ''
+        currentSectionIndex = valSecc;
+        sections[valSecc].className = 'active';
+         updateBoton();
+        for(var vd = 0; vd < videosYT.length; vd++){
+            var eleVD = "player_YT" + vd;
+            var ysrc = document.getElementById(eleVD).src;    
+            var newsrc = ysrc.replace("&autoplay=1", "");
+            document.getElementById(eleVD).src = newsrc;
+        }
+        playerP.stopVideo();
+        if(currentSectionIndex == sections.length - 1){
+          creaBoton();
+        }
+    }
+    
+    instruccionScroll = document.getElementById('inst1');
+    controlScroll = document.getElementById('scrollControl');
+    
+    function revelaScrollNav() {
+        instruccionScroll.style.display = "flex";
+        controlScroll.style.display = "flex";
+    }
+    
+    function ultimaSeccion() {
+        cont = 11;
+        cargaHtml();
+    }
+    
+    construyeBullets();
+
+
+</script>
+<script type="text/javascript">
+  function ocultarpuntero(){
+    document.getElementById("puntero1a").style.display = "none";
+    document.getElementById("puntero1b").style.display = "none";
+  }
+  function puntero1b(){
+    document.getElementById("puntero1b").style.display = "block";
+  }
+  function punterofinal(){
+    document.getElementById("punterofinal").style.display = "block";
+  }
+</script>
+
+</body>
+</html>

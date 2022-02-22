@@ -1,0 +1,137 @@
+html, body {
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  margin: 0;
+}
+
+#container {
+  width: 100%;
+  height: 100%;
+}
+/*
+ @import url('https://fonts.googleapis.com/css?family=Titillium+Web:200,400,400i,700,900&display=swap');
+            
+            body {
+                font-size: 16px;
+                background-color: #162120;
+                color: #7fb2ac;
+                font-family: 'Titillium Web', sans-serif;
+            }
+            
+            h1 {
+                font-size: 3rem;
+                font-weight: 200;
+                text-transform: uppercase;
+                margin: 0.3rem;
+                padding: 0;
+            }
+            
+            h2 {
+                font-size: 2rem;  
+                font-weight: 400;
+                margin: 0.3rem;
+                padding: 0;
+            }
+            
+            h3 {
+                font-size: 1.5rem;
+                font-weight: 700;
+                margin: 0.3rem;
+                padding: 0;
+            }
+            
+            p {
+                font-size: 1rem;
+                color: #fff;
+                font-weight: 400;
+                margin: 0.3rem;
+                padding: 0;
+            }
+            
+            .bold {
+                font-weight: 900;
+            }
+            
+            .italica {
+                font-style: italic;
+                font-weight: 400i;
+            }
+            
+            .contenedor {
+                width: 80%;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                flex-direction: column;
+                margin: 5% auto;
+            }
+            
+            .skinMedia {
+                border: 1px solid #a5e5dc;
+                background-color: #213a37;
+                border-radius: 5px;
+                padding: 0.5rem;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                flex-direction: column;
+                margin: 5% auto;
+            }
+            
+            .skinLupa {
+                border: 8px solid #a5e5dc;
+                background-color: #213a37;
+                border-radius: 50%;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                flex-direction: column;
+                margin: 5% auto;
+                background-position: center;
+                background-size: cover;
+            }
+            
+            .tooltip {
+              text-decoration: none;
+            }
+
+            .tooltip .tooltiptext {
+                visibility: hidden;
+                width: auto;
+                background: rgba(4,191,185,1);
+                background: -moz-linear-gradient(-45deg, rgba(4,191,185,1) 0%, rgba(4,116,139,1) 100%);
+                background: -webkit-gradient(left top, right bottom, color-stop(0%, rgba(4,191,185,1)), color-stop(100%, rgba(4,116,139,1)));
+                background: -webkit-linear-gradient(-45deg, rgba(4,191,185,1) 0%, rgba(4,116,139,1) 100%);
+                background: -o-linear-gradient(-45deg, rgba(4,191,185,1) 0%, rgba(4,116,139,1) 100%);
+                background: -ms-linear-gradient(-45deg, rgba(4,191,185,1) 0%, rgba(4,116,139,1) 100%);
+                background: linear-gradient(135deg, rgba(4,191,185,1) 0%, rgba(4,116,139,1) 100%);
+                filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#04bfb9', endColorstr='#04748b', GradientType=1 );
+                padding: 0.5rem;
+                border-radius: 5px;
+                width: 80%;
+                margin: 5% auto;
+                text-align: center;
+                position: relative;
+                z-index: 100;
+                top: -60%;
+                left: 0;
+                opacity: 0;
+                transition: opacity 0.3s;
+            }
+
+            .tooltip .tooltiptext::after {
+                content: "";
+                position: absolute;
+                top: 100%;
+                left: 50%;
+                margin-left: -10px;
+                border-width: 10px;
+                border-style: solid;
+                border-color: #0496a0 transparent transparent transparent;
+            }
+
+            .tooltip:hover .tooltiptext {
+                visibility: visible;
+                opacity: 1;
+            }*/

@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+  <meta charset="UTF-8">
+  <title>VR Campus Clickable</title>
+  <link rel="stylesheet" href="./style.css">
+  <link rel="stylesheet" href="../css/hover.css">
+  <link rel="stylesheet" href="../css/main.css">
+</head>
+<body>
+
+<div id="isla" class="minifancy heartbeat" style="position: fixed;display: none;">
+  <div id="subisla heartbeat" class="skinActividad" style=" width: 55%; height: 75%;animation-name: none;">
+
+  <div id="verbotoncerrar" class="cerrarminifancy hvr-pulse" onclick="_enviarAlPadre();" ></div>
+            <h3 class="bold">EMERGENCIAS</h3><br>
+            "Las EDS deberán contar con los siguientes elementos para dar respuesta a las posibles emergencias que se puedan presentar. <br><br>
+            Botiquín de primeros auxilios. Ubicado en un lugar de fácil acceso y con los elementos al día.<br>
+            Camilla de emergencia ubicada en un lugar de fácil acceso.<br>            
+            Parada de emergencia ubicada en surtidor o fachada del área administrativa."
+
+                     
+  </div>
+</div>
+
+
+
+
+<div id="container">
+
+  <a href="" id="reiniciar" style="display: none;">
+      <img src="../img/start.png" class="hvr-pulse" style="position: fixed;right: 1%;top: 1%;width: 12%;height: auto;">
+</a>
+	 
+</div>
+<!-- partial -->
+  <script src='../js/tree.js'></script>
+<script src='../js/panolens.js'></script>
+<script  src="./script.js"></script>
+
+</body>
+</html>
+
+<script>
+  function _enviarAlPadre(){
+   window.parent._ocultarIframe();
+  }
+ </script>
+
+<script type="text/javascript">
+  function isla(){
+    document.getElementById("isla").style.display = "flex";
+    document.getElementById("subisla").style.animationName = "heartbeat";
+   }
+  function surtidor(){
+    document.getElementById("surtidor").style.display = "flex";
+    document.getElementById("subsurtidor").style.animationName = "heartbeat";
+  }
+  function cerrarinfo(){
+    document.getElementById("isla").style.display = "none";
+    document.getElementById("surtidor").style.display = "none";
+  }
+
+  function cerrarx(){
+     document.getElementById("isla").style.display = "none";
+     document.getElementById("surtidor").style.display = "none";
+  }
+  function verbotoncerrar(){
+     document.getElementById("verbotoncerrar").style.display = "block";
+  }
+
+</script>
+
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<style>
+* {
+  box-sizing:border-box;
+}
+</style>

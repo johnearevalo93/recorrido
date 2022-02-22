@@ -1,0 +1,260 @@
+<!doctype html>
+<html lang="es">
+	<head>
+		<title>- Unicolmayor -</title>
+		<!-- Required meta tags -->
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+		<!-- Bootstrap CSS -->
+		<link rel="stylesheet" href="css/bootstrap.min.css" integrity="sha384-PsH8R72JQ3SOdhVi3uxftmaW6Vc51MKb0q5P2rRUpPvrszuE4W1povHYgTpBfshb" crossorigin="anonymous">
+		<link rel="stylesheet" href="css/fontello.css">
+		<link rel="stylesheet" href="css/animate.min.css">
+		<link rel="stylesheet" href="css/animation.css">
+		<link rel="stylesheet" href="css/hover.css">
+		<link rel="stylesheet" href="css/actividades.css">
+		<link rel="stylesheet" href="css/main.css">
+		<link href="stylesheet.css" rel="stylesheet">
+		<!--/*favicon*/-->
+		<link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon">
+		<link rel="icon" href="img/favicon.ico" type="image/x-icon">
+
+		<script type="text/javascript" src="js/main.js"></script>
+		</head>
+		<body bgcolor="rgb(0, 43, 29);" style=" ;overflow: hidden; scroll-behavior: smooth;" >
+
+			<div class="container-fluid" >
+
+				<div style="display:block;"id="botonMenuFlotante" class="botonMenuFlotante hvr-pulse" onclick="openNav()" id="botMenuNav" style="z-index: 9999">
+					&nbsp;
+				</div>
+
+				<div id="progress" class="progress">
+					<div class="progress-bar progress-bar-striped progress-bar-animated" role="progressbar" aria-valuenow="0" aria-valuemin="0" aria-valuemax="100"></div>
+				</div>
+
+				<div class="row">
+
+						<div id="container-content" style=" background-color: rgb(255, 255, 255);;overflow-y: auto;scroll-behavior: smooth;" ></div>
+
+					<div class="container-main-lateral col">
+					
+					</div>
+
+				</div>
+
+			</div>
+
+			<audio id="audio"></audio>
+			<!-- Optional JavaScript -->
+			<!-- jQuery first, then Popper.js, then Bootstrap JS -->
+			<script src="js/jquery-3.2.1.min.js"></script>
+			<script src="js/popper.min.js" integrity="sha384-vFJXuSJphROIrBnz7yo7oB41mKfc8JzQZiCq4NCceLEaO4IHwicKwpJf9c9IpFgh" crossorigin="anonymous"></script>
+			<script src="js/bootstrap.min.js" integrity="sha384-alpBpkh1PFOepccYVYDB4do5UnbKysX5WZXm3XxPqe5iKTfUKjNkCk9SaVuEZflJ" crossorigin="anonymous"></script>
+			<!-- PRELOAD JS -->
+			<script type="text/javascript" src="js/SCORM_API_wrapper.js"></script>
+			<script type="text/javascript" src="js/preloadjs-0.6.2.min.js"></script>
+			<!-- SNAP SVG -->
+			<script type="text/javascript" src="js/snap.svg-min.js"></script>
+			<script type="text/javascript" src="js/preload.js"></script>
+			<script type="text/javascript" src="js/main.js"></script>
+			<script type="text/javascript" src="js/scorm.js"></script>
+			<script type="text/javascript" src="js/test.js"></script>
+			<script type="text/javascript" src="js/ver.js"></script>
+			
+
+<script type="text/javascript">
+function _ocultarIframe(){
+	document.getElementById('test').style.display = 'none'
+}  
+function ani(){
+	document.getElementById('iframe1').className ='puff-out-center';
+}
+</script>
+
+
+
+<!-- FUNCION SONIDO BEEP BOTON -->
+<audio id="myAudio">
+  <source src="audio/bubble.mp3" type="audio/mp3">
+  Your browser does not support the audio element.
+</audio>
+
+<script>
+var x = document.getElementById("myAudio"); 
+
+function bubble() { 
+  x.play(); 
+} 
+
+function pausebubble() { 
+  x.pause(); 
+} 
+</script>
+
+<style>
+body {
+  font-family: "Lato", sans-serif;
+}
+
+.sidenav {
+  height: 100%;
+  width: 0;
+  position: fixed;
+  z-index: 2;
+  top: 0;
+  left: 0;
+  font-size: 1.1vw;
+  background-color: #1F3463;
+  overflow-x: hidden;
+  transition: 0.7s;
+  padding-top: 60px;
+  display: -webkit-flex; /* Safari */
+  -webkit-flex-direction: column; /* Safari 6.1+ */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+  overflow: hidden;
+ 
+}
+.sidenav h1 {
+  text-align: center;  
+}
+.sidenav a {
+  padding: 8px 8px 8px 32px;
+  text-decoration: none;
+  color: #f0c401;
+  display: block;
+  transition: 0.3s;
+  cursor: pointer;
+}
+.sidenav p {
+  padding: 8px 8px 8px 32px;
+  text-decoration: none;
+  font-size: 1.1vw;
+  color: #fafafa;
+  display: block;
+  transition: 0.3s;
+  cursor: pointer;
+  text-align: left;
+}
+
+
+.sidenav h1:hover {
+  color: #f1f1f1;
+}
+.sidenav p:hover {
+  color: #f1f1f1;
+}
+
+.sidenav .closebtn {
+    background-image: url(img/cerrar.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    width: 8vw;
+    height: 8vw;
+    position: absolute;
+    top: 1vh;
+    left: 1vh;
+  /*font-size: 19px;
+  margin-left: 10px;
+  color: white;*/
+}
+
+.botonMenuFlotante {
+    background-image: url(img/menuNav.png);
+    width: 8vw;
+    height: 8vw;
+    position: absolute;
+    top: 1vh;
+    left: 1vh;
+    z-index: 2;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    transition: 0.3s;
+    display: none;
+}
+
+.botonMenuFlotante {
+    cursor: pointer;
+}
+@media screen and (max-height: 450px) {
+  .sidenav {padding-top: 15px;}
+  .sidenav a {font-size: 18px;}
+}
+</style>
+
+<div id="mySidenav" class="sidenav" style="z-index: 9999">
+  <a href="javascript:void(0)" class="closebtn" onclick="closeNav()" style="font-size: 7vw">&nbsp;</a>
+  <h1 class="bold" style="color: #ffffff" >Sede principal</h1>
+  <nav class="menu">
+  <a href="#" data-ref="3"><p class="bold">Entrada</p></a>
+  <a href="#" data-ref="10"><p class="bold">Cancha </p></a>
+  <a href="#" data-ref="21"><p class="bold">Rectoría </p></a>
+  <!-- <a href="#" data-ref="23"><p class="bold">Biblioteca</p></a> -->
+  <a href="#" data-ref="25"><p class="bold">Biblioteca</p></a>
+  <a href="#" data-ref="29"><p class="bold">Laboratorios</p></a>
+  <a href="#" data-ref="31"><p class="bold">Telar </p></a>
+  <a href="#" data-ref="32"><p class="bold">Sietic  </p></a>
+  <!-- <a href="#" data-ref="35"><p class="bold">Plaza Mural </p></a> -->
+  <a href="#" data-ref="40"><p class="bold">Plaza Mura </p></a>
+</nav>
+<!--   <h1 class="bold" style="color: #8cc53e" >VISTA AÉREA</h1>
+  <h1 class="bold" style="color: #8cc53e" >LUBRICANTES</h1>  -->
+</div>
+
+<div id="landscape">
+  <div class="skinMedia" style="width: 80%; height: 80%; position: absolute; top: 0; left: 0; right: 0; bottom: 0; margin: auto;">
+    <img src="img/manoPaneo.png" width="70%">
+    <h1>Para visualizar perfectamente el curso debes poner el dispositivo en horizontal.</h1>
+  </div>
+</div>
+
+<script>
+function openNav() {
+    document.getElementById("mySidenav").style.width = "25vw";
+    //document.getElementById("botMenuNav").style.display = "none";
+}
+
+function closeNav() {
+  document.getElementById("mySidenav").style.width = "0";
+    //document.getElementById("botMenuNav").style.display = "block";
+}
+  function verbotonMenuFlotante(){
+    document.getElementById("botonMenuFlotante").style.display = "block";
+  }
+
+
+/*if(window.innerHeight > window.innerWidth){
+  $("#landscape").show();
+}
+if(window.innerHeight < window.innerWidth){
+  $("#landscape").hide();
+}*/
+</script>
+<script type="text/javascript">
+  function terminacurso() {
+    SCORM_CallLMSSetValue('cmi.core.lesson_status', 'completed');
+
+SCORM_CallLMSCommit();
+
+SCORM_CallLMSFinish();
+  }
+</script>
+<script type="text/javascript">
+  
+  function endcourse(){
+    scorm.set("cmi.core.lesson_status", "completed");
+  scorm.save();
+  var callSucceeded = scorm.quit();
+  alert(fin);
+}
+</script>
+
+</body>
+</html>
+
+

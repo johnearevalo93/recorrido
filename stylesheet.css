@@ -1,0 +1,8 @@
+@font-face {
+    font-family: 'Walkway';
+    src: url('WalkwayBold.woff2') format('woff2'),
+        url('WalkwayBold.woff') format('woff');
+    font-weight: bold;
+    font-style: normal;
+}
+

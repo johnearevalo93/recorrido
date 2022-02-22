@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+  <meta charset="UTF-8">
+  <link rel="stylesheet" href="./style.css">
+  <link rel="stylesheet" href="../css/hover.css">
+  <link rel="stylesheet" href="../css/main.css">
+</head>
+<body>
+
+
+<div id="panel" class="minifancy heartbeat" style=" display: none;">
+  <div id="subisla heartbeat" class="recuadro_verde" style=" height: 60%;">
+    <div class="cerrarminifancy hvr-pulse" onclick="_enviarAlPadre();"></div>
+    <div  class="centro" style="width: 70%;">
+      <h2 class="bold">Paneles solares</h2>
+      <br>
+      Un panel solar es un aparato que utiliza la energía proveniente del sol para transformarla en energía eléctrica. Estos dispositivos están compuestos por celdas solares hechas de silicio cristalino, el cual tiene la propiedad de convertir la luz del sol en electricidad. Cuanto mayor sea el panel, mayor será la energía que recibe del sol y por ende mayor será la generación de electricidad. La energía solar hace parte de las llamadas ‘energías renovables’.
+    </div>
+    <div class="abajo skinLupa"><img src="../img/punto6/paneles.jpg" width="100%"></div> 
+  </div>
+</div>
+ 
+
+
+<div id="container">
+
+  <a href="" id="reiniciar" style="display: none;">
+    <img src="../img/start.png" class="hvr-pulse" style="position: fixed;right: 1%;top: 1%;width: 12%;height: auto;">
+  </a>
+   
+</div>
+<!-- partial -->
+<script src='../js/tree.js'></script>
+<script src='../js/panolens.js'></script>
+<script  src="./script.js"></script>
+
+</body>
+</html>
+
+<script>
+  function _enviarAlPadre(){
+   window.parent._ocultarIframe();
+   parent.revelaScrollNav();
+  }
+ </script>
+
+<script type="text/javascript">
+
+  function panel(){
+    document.getElementById("panel").style.display = "flex";
+   }
+
+
+  function cerrarx(){
+    document.getElementById("panel").style.display = "none";
+    document.getElementById("programa").style.display = "none";
+    document.getElementById("capacitaciones").style.display = "none";
+  }
+
+</script>
+
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<style>
+* {
+  box-sizing:border-box;
+}
+</style>

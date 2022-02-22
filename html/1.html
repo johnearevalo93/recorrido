@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+* {
+  box-sizing: border-box;
+  overflow: hidden;
+}
+
+</style>
+</head>
+<body style="overflow: hidden;">
+
+ <img src="img/back.png" height="100%" width="100%">
+ <!--<img src="img/logo.png" class="slide-in-blurred-right" width="25%" style="position: absolute; bottom: 5%; right: 5%;">
+
+<img src="img/btn_inicio.png" class="slide-in-blurred-left delay-0_1s" width="35%" style="position: absolute; top: 45vh; left: 5%; width: 55vh;"> 
+
+<nav class="menu slide-in-blurred-top delay-0_1s inicio" onmouseover="bubble();" style="position: absolute; top: 5%; right: 30%; width: 35%; overflow: unset;">
+  <a href="#" data-ref="2  " onclick="verbotonMenuFlotante();">
+    <img src="img/logo.png" width="100%">
+  </a>
+</nav>
+
+ <div class="heartbeat delay-1_5s" style="animation-iteration-count: infinite; position: absolute; top: 10vh; right: 20vw; width: 15vw; height: auto;">
+  <img src="img/flecha_adelante.png" style="width: 100%; transform: rotate(155deg);">
+</div> -->
+
+<div class="skinActividad2s inicio_caja slide-in-bck-bottom">
+  <h1 class="bold delay-1s tracking-in-expand">Bienvenidos al recorrido virtual de la Universidad Colegio Mayor de Cundinamarca</h1>
+  <br>
+  <nav class="menu slide-in-bck-center delay-2s">
+    <a href="#" data-ref="2">
+      <img class="hvr-pulse" src="img/logo.png"  onmouseover="bubble();" style="width: 50%;">
+    </a>
+  </nav> 
+</div>
+
+<script>
+var video = document.getElementById("myVideo");
+var btn = document.getElementById("myBtn");
+
+function myFunction() {
+  if (video.paused) {
+    video.play();
+    btn.innerHTML = "Pause";
+  } else {
+    video.pause();
+    btn.innerHTML = "Play";
+  }
+}
+</script>
+
+</body>
+</html>
